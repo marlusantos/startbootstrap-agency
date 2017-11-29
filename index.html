@@ -38,19 +38,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Início</a>
+              <a class="nav-link js-scroll-trigger" href="#inicio">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Blog</a>
+              <a class="nav-link js-scroll-trigger" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#envolva-se">Envolva-se</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Quem somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Mais Bicicletas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
@@ -61,56 +64,101 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead" id="inicio">
       <div class="container">
         <div class="intro-text">
           <!-- <div class="intro-lead-in">Rodas da Paz</div> -->
-          <h4 class="section-subheading text-muted">Desde de 2003 rodando com você, conheça nossa história.</h4>
+          <div class="intro-lead-in">Desde de 2003 rodando com você, conheça nossa história.</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Saiba mais</a>
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <section id="services">
+    <section id="envolva-se">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Envolva-se</h2>
+            <h3 class="section-subheading text-muted">Faça parte de nossas campanhas e ajude a tornar o trânsito do DF mais seguro e humano.</h3>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-4x" data-toggle="modal" href="#associe-seModal">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-group fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Associe-se</h4>
+            <p class="text-muted" data-toggle="modal" href="#associe-seModal">Seja um associado da ONG Rodas da Paz. Os associados da Rodas da Paz são fundamentais para a autonomia financeira da organização e participam das assembleias com direito a voto. A efetivação da associação ocorre por meio de um cadastro simples e uma contribuição anual financeira no valor de R$ 60,00.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-gift fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Doações financeiras</h4>
+            <p class="text-muted">A cada 15 reais doados você colabora com a mão de obra do conserto de uma bicicleta do projeto Doe Bicicleta!</p>
+            <p class="text-muted">Com 50 reais você ajuda a comprar as peças que ajudarão no conserto de várias bicicletas!</p>
+
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Seja um voluntário</h4>
+            <p class="text-muted">Anualmente realizamos uma formação de voluntárias, quando apresentados o trabalho da ONG e passamos a conhecer os interesses de pessoas a fim de se engajar no trabalho da ONG. A próxima formação será em 2018.</p>
+            <p class="text-muted">A formação é uma oportunidade de nos aproximarmos do trabalho de ONG de outras cidades com a presença de líderes do cicloativismo de outras cidades. </p>
           </div>
         </div>
       </div>
     </section>
+    <!-- Envolva-se modal -->
+    <!-- Modal Associe-se -->
+    <div class="portfolio-modal modal fade" id="associe-seModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Associe-se</h2>
+                  <p class="item-intro text-muted">O trabalho voluntário que realizamos depende do apoio de pessoas como você.</p>
+
+                  <p>Com a inspiração de vocês, realizamos nossas atividades em 2016 </p>
+                  <p>Trabalhamos por um DF que respeite as diferenças e conviva em paz, com mais saúde, mobilidade urbana sustentável e sem vítimas da violência no trânsito.</p>
+                  <p>Venha com a gente! O sistema de pagamento é online, simples, rápido e seguro.</p>
+                  <p>A anuidade de R$60 permite que as nossas atividades aconteçam, são apenas 5 reais para cada mês do ano. Você paga pouquinho e ajuda muitão.</p>
+                  <iframe id="1337309598" title="Cópia de FICHA DE FILIAÇÃO" src="http://docs.google.com/spreadsheet/embeddedform?bc=transparent&amp;f=Arial%252C%2BVerdana%252C%2Bsans-serif&amp;hl=pt_BR&amp;htc=%2523666666&amp;key=0Ai5JzsQrz7tRdEczWHZoX3d2YV9hVEN3T3NDMFBtTlE&amp;lc=%25230066cc&amp;pli=1&amp;tc=%2523000000&amp;ttl=0" width="100%" height="1690" frameborder="0" marginwidth="0" marginheight="0"></iframe></p>
+                  <p><!-- INICIO FORMULARIO BOTAO PAGSEGURO --></p>
+                  <form action="https://pagseguro.uol.com.br/v2/pre-approvals/request.html" method="post"><!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO --><img class="alignnone wp-image-8817" src="http://www.rodasdapaz.org.br/wp-content/uploads/2013/04/seta-300x109.png" alt="seta" width="223" height="81" srcset="http://www.rodasdapaz.org.br/wp-content/uploads/2013/04/seta-300x109.png 300w, http://www.rodasdapaz.org.br/wp-content/uploads/2013/04/seta.png 411w" sizes="(max-width: 223px) 100vw, 223px" /><br />
+                  <input name="code" type="hidden" value="25AAAEAB414100A994BF9FBC0890CEB9" /><br />
+                  <input alt="Pague com PagSeguro - é rápido, grátis e seguro!" name="submit" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/assinaturas/120x53-assinar-azul.gif" type="image" /></form>
+                  <p><!-- FINAL FORMULARIO BOTAO PAGSEGURO --></p>
+                  <p>
+
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar janela</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="projects">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -278,10 +326,10 @@
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+                <div class="timeline-image" data-toggle="modal" href="#associe-seModal">
+                  <h4>Faça
+                    <br>Parte
+                    <br>disso!</h4>
                 </div>
               </li>
             </ul>
@@ -295,87 +343,49 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Mais bicicletas</h2>
+            <h3 class="section-subheading text-muted">Eixo de atuação: promoção do uso da bicicleta</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+              <h4>Passeio ciclístico Rodas da Paz</h4>
+              <p class="text-muted">Sua 15º edição ocorreu em 30 de julho.</p>
+
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+              <h4>De bike ao trabalho</h4>
+              <p class="text-muted">Teve sua terceira edição no Brasil dia 8 de maio.</p>
+
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+              <h4>Dia Mundial sem carro</h4>
+              <p class="text-muted">Celebrada mundialmente em 22 de setembro</p>
+
             </div>
           </div>
+
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+            <h4>Dia Nacional do Ciclista</h4>
+            <p class="text-muted">O dia 19 de agosto marca o Dia Nacional do Ciclista</p>
+
+          </div>
         </div>
+        </div>
+      </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted">A Rodas da Paz acredita que o uso da bicicleta nos deslocamentos diários em uma metrópole revela muito sobre as condições de mobilidade sustentável da população. Por isso promovemos e damos visibilidade para o uso da bicicleta, vemos ela como um meio de transformação do espaço urbano, promovendo a equidade no direito à cidade.</p>
           </div>
         </div>
       </div>
@@ -385,24 +395,29 @@
     <section class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-4">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/image.png" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-4">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/image(1).png" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-4">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/image(2).png" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-4">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/image(3).png" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/image(4).png" alt="">
             </a>
           </div>
         </div>
@@ -414,8 +429,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Entre em contato</h2>
+            <h3 class="section-subheading text-muted">Mande sua mensagem para nós.</h3>
           </div>
         </div>
         <div class="row">
@@ -424,21 +439,21 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Seu nome *" required data-validation-required-message="Digite seu nome.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                    <input class="form-control" id="email" type="email" placeholder="Seu Email *" required data-validation-required-message="Digite seu email.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                    <input class="form-control" id="phone" type="tel" placeholder="Seu Fone *" required data-validation-required-message="Digite seu número de telefone.">
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="message" placeholder="Sua Mensagem *" required data-validation-required-message="Digite sua mensagem."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -459,23 +474,43 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
+            <span class="copyright">Copyright &copy; Rodas da Paz 2017</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/rodasdapaz">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/rodasdapaz/">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
+                <a href="https://plus.google.com/116575046995177051722">
+                  <i class="fa fa-google-plus-official"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.flickr.com/photos/rodasdapaz/">
+                  <i class="fa fa-flickr"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://instagram.com/rodasdapaz">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCqKVi83FIH9tUBFVbsjlkmg">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://telegram.me/rodasdapaz">
+                  <i class="fa fa-telegram"></i>
                 </a>
               </li>
             </ul>
@@ -483,16 +518,42 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ</a>
               </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
+
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <!-- FOOTER MODAL -->
+    <!-- faq modal -->
+
+    <div class="portfolio-modal modal fade" id="faqModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">FAQ – Perguntas Frequentes</h2>
+
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Fechar Janela</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Portfolio Modals -->
 
